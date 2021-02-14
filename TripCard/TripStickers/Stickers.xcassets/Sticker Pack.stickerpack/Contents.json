@@ -1,0 +1,17 @@
+{
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "grid-size" : "regular"
+  },
+  "stickers" : [
+    {
+      "filename" : "giphy-3.sticker"
+    },
+    {
+      "filename" : "giphy-4.sticker"
+    }
+  ]
+}

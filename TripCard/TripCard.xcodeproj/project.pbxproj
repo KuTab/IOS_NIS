@@ -15,8 +15,34 @@
 		1774920C25C87B99000294F8 /* TripCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1774920B25C87B99000294F8 /* TripCollectionViewCell.swift */; };
 		1774920F25C87EAA000294F8 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1774920E25C87EAA000294F8 /* Trip.swift */; };
 		1774921325C880FD000294F8 /* TripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1774921225C880FD000294F8 /* TripViewController.swift */; };
+		1781176825D9D76A009D4FA6 /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1781176725D9D76A009D4FA6 /* Stickers.xcassets */; };
+		1781176C25D9D76A009D4FA6 /* TripStickers.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1781176525D9D767009D4FA6 /* TripStickers.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		178C44C325C8AA1F00F6E928 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 178C44C225C8AA1F00F6E928 /* Media.xcassets */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1781176A25D9D76A009D4FA6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 177491EB25C86E26000294F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1781176425D9D767009D4FA6;
+			remoteInfo = TripStickers;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1781176D25D9D76A009D4FA6 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1781176C25D9D76A009D4FA6 /* TripStickers.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		177491F325C86E26000294F8 /* TripCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -29,6 +55,9 @@
 		1774920B25C87B99000294F8 /* TripCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripCollectionViewCell.swift; sourceTree = "<group>"; };
 		1774920E25C87EAA000294F8 /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
 		1774921225C880FD000294F8 /* TripViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripViewController.swift; sourceTree = "<group>"; };
+		1781176525D9D767009D4FA6 /* TripStickers.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TripStickers.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1781176725D9D76A009D4FA6 /* Stickers.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Stickers.xcassets; sourceTree = "<group>"; };
+		1781176925D9D76A009D4FA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		178C44C225C8AA1F00F6E928 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -47,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				177491F525C86E26000294F8 /* TripCard */,
+				1781176625D9D767009D4FA6 /* TripStickers */,
 				177491F425C86E26000294F8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				177491F325C86E26000294F8 /* TripCard.app */,
+				1781176525D9D767009D4FA6 /* TripStickers.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,6 +107,15 @@
 			path = TripCard;
 			sourceTree = "<group>";
 		};
+		1781176625D9D767009D4FA6 /* TripStickers */ = {
+			isa = PBXGroup;
+			children = (
+				1781176725D9D76A009D4FA6 /* Stickers.xcassets */,
+				1781176925D9D76A009D4FA6 /* Info.plist */,
+			);
+			path = TripStickers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,15 +126,32 @@
 				177491EF25C86E26000294F8 /* Sources */,
 				177491F025C86E26000294F8 /* Frameworks */,
 				177491F125C86E26000294F8 /* Resources */,
+				1781176D25D9D76A009D4FA6 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1781176B25D9D76A009D4FA6 /* PBXTargetDependency */,
 			);
 			name = TripCard;
 			productName = TripCard;
 			productReference = 177491F325C86E26000294F8 /* TripCard.app */;
 			productType = "com.apple.product-type.application";
+		};
+		1781176425D9D767009D4FA6 /* TripStickers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1781177025D9D76A009D4FA6 /* Build configuration list for PBXNativeTarget "TripStickers" */;
+			buildPhases = (
+				1781176325D9D767009D4FA6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TripStickers;
+			productName = TripStickers;
+			productReference = 1781176525D9D767009D4FA6 /* TripStickers.appex */;
+			productType = "com.apple.product-type.app-extension.messages-sticker-pack";
 		};
 /* End PBXNativeTarget section */
 
@@ -106,6 +163,9 @@
 				LastUpgradeCheck = 1220;
 				TargetAttributes = {
 					177491F225C86E26000294F8 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					1781176425D9D767009D4FA6 = {
 						CreatedOnToolsVersion = 12.2;
 					};
 				};
@@ -124,6 +184,7 @@
 			projectRoot = "";
 			targets = (
 				177491F225C86E26000294F8 /* TripCard */,
+				1781176425D9D767009D4FA6 /* TripStickers */,
 			);
 		};
 /* End PBXProject section */
@@ -137,6 +198,14 @@
 				1774920325C86E28000294F8 /* LaunchScreen.storyboard in Resources */,
 				1774920025C86E28000294F8 /* Assets.xcassets in Resources */,
 				177491FE25C86E26000294F8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1781176325D9D767009D4FA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1781176825D9D76A009D4FA6 /* Stickers.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +225,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1781176B25D9D76A009D4FA6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1781176425D9D767009D4FA6 /* TripStickers */;
+			targetProxy = 1781176A25D9D76A009D4FA6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		177491FC25C86E26000294F8 /* Main.storyboard */ = {
@@ -331,6 +408,36 @@
 			};
 			name = Release;
 		};
+		1781176E25D9D76A009D4FA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J3PCAKUBGU;
+				INFOPLIST_FILE = TripStickers/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.egordadugin.TripCard.TripStickers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1781176F25D9D76A009D4FA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J3PCAKUBGU;
+				INFOPLIST_FILE = TripStickers/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.egordadugin.TripCard.TripStickers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -348,6 +455,15 @@
 			buildConfigurations = (
 				1774920825C86E28000294F8 /* Debug */,
 				1774920925C86E28000294F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1781177025D9D76A009D4FA6 /* Build configuration list for PBXNativeTarget "TripStickers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1781176E25D9D76A009D4FA6 /* Debug */,
+				1781176F25D9D76A009D4FA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
